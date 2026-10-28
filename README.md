@@ -22,7 +22,7 @@ All text is in `index.html`. Keep claims verifiable:
 - Data is described as synthetic.
 - AI assistance is disclosed.
 
-Add experience, a résumé link or LinkedIn only with details you are comfortable publishing.
+Full experience lives on LinkedIn (linked from the page). Add a résumé PDF or experience details only if you are comfortable publishing them.
 
 ## Preview locally
 

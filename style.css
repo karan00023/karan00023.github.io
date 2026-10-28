@@ -41,7 +41,7 @@ figure { margin: 0; }
 .photo-fallback { display: grid; place-items: center; background: var(--green-soft); color: var(--green); font-family: Georgia, serif; font-size: 72px; }
 
 .section-head { margin-bottom: 26px; max-width: 720px; }
-.work, .approach, .about, .contact { padding: 64px 0; border-bottom: 1px solid var(--line); }
+.work, .experience, .approach, .about, .contact { padding: 64px 0; border-bottom: 1px solid var(--line); }
 .work { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .work .section-head { grid-column: 1 / -1; }
 .project { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
@@ -70,6 +70,15 @@ figure { margin: 0; }
 .contact .cta { justify-content: center; }
 .site-footer { max-width: 1200px; margin: auto; padding: 22px 5%; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 10px; font-size: 14px; color: var(--muted); }
 
+.timeline { list-style: none; padding: 0; margin: 0 0 10px; border-left: 2px solid #b9cdb3; }
+.timeline li { position: relative; padding: 0 0 26px 26px; }
+.timeline li::before { content: ''; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: var(--green); }
+.timeline .when { margin: 0; font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: .5px; text-transform: uppercase; }
+.timeline h3 { font-size: 19px; margin: 6px 0 2px; }
+.timeline .org { margin: 0 0 6px; font-weight: 700; color: var(--green); }
+.timeline p { font-size: 16px; line-height: 1.6; color: #3f4a42; margin: 4px 0; }
+.section-head a { color: var(--green); }
+
 @media (max-width: 900px) {
   .hero, .about { grid-template-columns: 1fr; gap: 28px; }
   .hero-photo { max-width: 360px; order: -1; }
@@ -83,7 +92,7 @@ figure { margin: 0; }
   main { padding: 0 16px; }
   .hero { padding: 24px 0 48px; }
   .hero-photo { max-width: 240px; }
-  .work, .approach, .about, .contact { padding: 44px 0; }
+  .work, .experience, .approach, .about, .contact { padding: 44px 0; }
   .project { padding: 20px; }
   .principles { grid-template-columns: 1fr; }
   .site-footer { display: block; padding: 18px 16px; }
