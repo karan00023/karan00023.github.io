@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Karan Kapoor · Technical program and AI product work</title>
+  <meta name="description" content="Karan Kapoor: technical program and product leader. Working prototypes on AI launches, evaluation and observability, each with tests and stated limits.">
+  <meta property="og:title" content="Karan Kapoor">
+  <meta property="og:description" content="Technical program and AI product work: working prototypes with evidence and stated limits.">
+  <meta property="og:image" content="https://karan00023.github.io/assets/headshot.jpg">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./site.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="./">Karan Kapoor</a>
+  <nav aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#approach">Approach</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">TECHNICAL PROGRAM &amp; PRODUCT LEADERSHIP</p>
+      <h1>I make complex launches <span>legible, measurable and decidable.</span></h1>
+      <p class="lede">I'm Karan Kapoor, a product and technical program leader. I build working prototypes that show how I approach AI launches, evaluation and operations: explicit decision rules, measured baselines and clear limits.</p>
+      <div class="cta">
+        <a class="primary" href="#work">See the work</a>
+        <a class="secondary" href="https://github.com/karan00023">GitHub ↗</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="assets/headshot.jpg" alt="Portrait of Karan Kapoor" width="420" height="420" data-fallback="KK">
+    </figure>
+  </section>
+
+  <section id="work" class="work" aria-labelledby="work-title">
+    <div class="section-head">
+      <p class="eyebrow">SELECTED WORK</p>
+      <h2 id="work-title">Working tools, with the evidence attached.</h2>
+      <p class="small">Every project runs in the browser, uses synthetic data and states what was tested and what wasn't.</p>
+    </div>
+
+    <article class="project featured">
+      <div class="project-body">
+        <p class="kicker">Program management · Launches, infrastructure, compute, billing</p>
+        <h3>Launch Control</h3>
+        <p>A launch readiness tracker for an AI model launch. Dependencies forecast the real date and expose the critical path. Evidence-backed gates drive a go/no-go call with written reasons, and the weekly status report generates itself and lists what changed since the last one.</p>
+        <ul class="facts">
+          <li>Dependency-aware forecast that separates planned overlap from real slips</li>
+          <li>Gates spanning safety, capacity, load testing and billing reconciliation</li>
+          <li>14 engine tests and 19 browser checks at desktop and mobile widths</li>
+        </ul>
+        <p class="links"><a href="https://karan00023.github.io/launch-control/">Open the tracker ↗</a> <a href="https://github.com/karan00023/launch-control">Source ↗</a></p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <p class="kicker">AI product · Retrieval, citations, evaluation</p>
+        <h3>Feedback Lens</h3>
+        <p>An evidence-first feedback investigation workspace. Answers quote the records they came from, explain why they answered or declined, and offer related context and better questions instead of dead ends.</p>
+        <ul class="facts">
+          <li>Retrieval changes scored against a frozen baseline, regressions included</li>
+          <li>Use-case questions committed before the question router was built</li>
+          <li>No language model on the hosted page, and the page says so</li>
+        </ul>
+        <p class="links"><a href="https://karan00023.github.io/feedback-lens/">Open the workspace ↗</a> <a href="https://github.com/karan00023/feedback-lens">Source ↗</a></p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <p class="kicker">Observability · Release decisions</p>
+        <h3>Telemetry Lab</h3>
+        <p>A 480-request synthetic replay in which aggregate median latency worsens while every workload cohort improves. It shows why release reviews need cohort analysis before anyone rolls back.</p>
+        <p class="links"><a href="https://karan00023.github.io/feedback-lens/telemetry/">Explore the lab ↗</a> <a href="https://karan00023.github.io/feedback-lens/telemetry/report.html">Read the report ↗</a></p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-body">
+        <p class="kicker">Evaluation · Technical note</p>
+        <h3>A valid citation can still support the wrong answer</h3>
+        <p>A reproducible counterexample: two answers share a genuine quote and both pass automatic citation checks, but only one claim follows from the source. Structural checks and answer quality need separate release criteria.</p>
+        <p class="links"><a href="https://karan00023.github.io/feedback-lens/research/citation-checks.html">Read the note ↗</a></p>
+      </div>
+    </article>
+  </section>
+
+  <section id="approach" class="approach" aria-labelledby="approach-title">
+    <div class="section-head">
+      <p class="eyebrow">APPROACH</p>
+      <h2 id="approach-title">How I work, shown rather than claimed.</h2>
+    </div>
+    <div class="principles">
+      <div><h3>Make the decision rule explicit</h3><p>Launch Control writes its go/no-go reasons down, so a team can argue with the rule instead of with each other.</p></div>
+      <div><h3>Measure against a baseline</h3><p>Feedback Lens froze the original retriever before changing it and reports the regressions alongside the gains.</p></div>
+      <div><h3>Design the failure states</h3><p>Loading, empty, abstention and error states are part of the product. No question should end in a dead end.</p></div>
+      <div><h3>State the limits</h3><p>Synthetic data is labelled as synthetic, and anything untested is described as untested.</p></div>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-title">
+    <figure class="about-photo">
+      <img src="assets/about.jpg" alt="Karan Kapoor at work" width="480" height="480" loading="lazy" data-fallback="KK">
+    </figure>
+    <div>
+      <p class="eyebrow">ABOUT</p>
+      <h2 id="about-title">Karan Kapoor</h2>
+      <p>I'm a product and technical program leader focused on how AI products are launched, measured and run: the work between research, infrastructure, safety, billing and the people who use the product.</p>
+      <p>The projects here are personal prototypes, built with AI coding assistance and published with their tests, methods and limitations. Each repository has a contribution record separating my direction from AI-written code.</p>
+      <h3 class="focus-title">Focus areas</h3>
+      <ul class="focus">
+        <li>Model and product launches</li>
+        <li>Infrastructure and compute programs</li>
+        <li>Usage metering and billing</li>
+        <li>Evaluation and release readiness</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Get in touch</h2>
+    <p>The fastest way to reach me is through GitHub.</p>
+    <p class="cta"><a class="primary" href="https://github.com/karan00023">GitHub ↗</a></p>
+  </section>
+</main>
+<footer class="site-footer">
+  <span>© <span id="year">2026</span> Karan Kapoor</span>
+  <span>Built with AI coding assistance · Project data is synthetic</span>
+</footer>
+</body>
+</html>
