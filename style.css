@@ -41,10 +41,13 @@ figure { margin: 0; }
 .photo-fallback { display: grid; place-items: center; background: var(--green-soft); color: var(--green); font-family: Georgia, serif; font-size: 72px; }
 
 .section-head { margin-bottom: 26px; max-width: 760px; }
-.highlights { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 36px 0; border-bottom: 1px solid var(--line); }
-.highlights div { border-left: 3px solid var(--green); padding-left: 14px; }
-.highlights strong { display: block; font-family: Georgia, serif; font-weight: 400; font-size: 30px; color: var(--green); line-height: 1.1; }
-.highlights span { display: block; margin-top: 6px; font-size: 14px; line-height: 1.45; color: var(--muted); }
+.highlights { padding: 34px 0 38px; border-bottom: 1px solid var(--line); }
+.highlights dl { margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); background: #fff; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.stat { padding: 24px 22px; border-right: 1px solid var(--line); }
+.stat:last-child { border-right: 0; }
+.stat dt { font-family: Georgia, serif; font-size: 44px; line-height: 1; color: var(--green); letter-spacing: -1px; }
+.stat dd { margin: 12px 0 0; font-size: 14px; line-height: 1.5; color: var(--muted); }
+.stat dd strong { display: block; font-size: 15px; color: #1d2520; margin-bottom: 2px; }
 .work, .experience, .approach, .about, .contact { padding: 64px 0; border-bottom: 1px solid var(--line); }
 .work { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .work .section-head { grid-column: 1 / -1; }
@@ -89,7 +92,9 @@ figure { margin: 0; }
   .about-photo { max-width: 360px; }
   .work { grid-template-columns: 1fr; }
   .principles { grid-template-columns: 1fr 1fr; }
-  .highlights { grid-template-columns: 1fr 1fr; }
+  .highlights dl { grid-template-columns: 1fr 1fr; }
+  .stat:nth-child(2) { border-right: 0; }
+  .stat:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
 }
 @media (max-width: 560px) {
   .site-header { padding: 16px; display: block; }
@@ -100,7 +105,8 @@ figure { margin: 0; }
   .work, .experience, .approach, .about, .contact { padding: 44px 0; }
   .project { padding: 20px; }
   .principles { grid-template-columns: 1fr; }
-  .highlights strong { font-size: 24px; }
+  .stat { padding: 18px 16px; }
+  .stat dt { font-size: 34px; }
   .site-footer { display: block; padding: 18px 16px; }
   .site-footer span { display: block; line-height: 1.8; }
 }
